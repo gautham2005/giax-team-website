@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 3px;
+}
+
+header p {
+    color: #d1d1d1;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+/* Member Card */
+.member-card {
+    background: rgba(255,255,255,0.1);
+    width: 240px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    background: rgba(255,255,255,0.2);
+}
+
+.member-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #00c6ff;
+    margin-bottom: 15px;
+}
+
+.member-card h3 {
+    margin-bottom: 5px;
+}
+
+.member-card span {
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+/* Social Media */
+.socials {
+    margin-top: 15px;
+}
+
+.socials a {
+    color: white;
+    margin: 0 8px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    color: #00c6ff;
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Animations */
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    .member-card {
+        width: 90%;
+    }
+}
